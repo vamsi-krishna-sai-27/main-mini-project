@@ -1,0 +1,128 @@
+
+*{      
+    font-family: "Inter", sans-serif;  
+}
+input,textarea{
+    color: white;
+}
+body{
+    padding: 20px;
+    background-color: #121212;
+    color: #FFFFFF;
+}
+
+body>.one{
+    background: linear-gradient(90deg, #98558c, #FF00FF);
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-bottom-left-radius: 1%;
+    border-bottom-right-radius: 100%;
+    filter: blur(40px);
+}
+body>.two{
+    background: linear-gradient(-190deg, #1894DE, #21A2CE,#005F73);
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 46% 54% 31% 69% / 0% 77% 23% 100%   ;
+    filter: blur(40px);
+}
+body>.three{
+    background: linear-gradient(0deg, #62CE9D, #4095E0);
+    width: 180mm;
+    height: 50mm;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 78% 22% 60% 40% / 96% 90% 10% 4%    ;
+    filter: blur(20px);
+}
+
+body>.four{
+    background: linear-gradient(57deg, #B81F1F, #6489E6);
+    width: 70mm;
+    height: 30mm;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    border-bottom-left-radius: 1%;
+    border-top-left-radius: 70%;
+    filter: blur(20px);
+}
+a{
+    text-decoration: none;
+}
+
+.nav-section{
+    display: flex; 
+    align-items: center;
+    gap: 10%;
+    position: relative;
+    margin-left: 3%;
+    margin-top: 1%;
+}
+
+.sub{
+    width:50%;
+    display: flex;
+    align-items: center;
+    gap: 20%;
+    position: absolute;
+    right: 30px;
+}
+.nav-section>h1>a{
+    font-size: 45px;
+    font-weight: bold;
+    position: relative;
+    color: #FFFFFF;
+}
+.sub>h3>a
+{
+    font-size:19px;
+    color: #FFFFFF;
+}
+.sub>h3>a:hover{
+    text-decoration: underline;
+
+    text-underline-offset: 15px;
+}
+/* section */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container>h2{
+    font-size: 40px;
+}
+.input-container>input{
+    width: 350px;
+    height: 25px;
+    padding: 10px 20px;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    background-color: #2e2b2b;
+    
+}
+.input-container>button{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 7px 15px;
+    margin-left: 20px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background: linear-gradient(90deg,#6A11CB,#2575FC);
+    cursor: pointer;
+}

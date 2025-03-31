@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        
+        *{      
+            font-family: "Inter", sans-serif;  
+        }
+        body{
+            padding: 20px;
+            background-color: #121212;
+            color: white;
+        }
+
+        body>.one{
+            background: linear-gradient(90deg, #98558c, #FF00FF);
+            width: 500px;
+            height: 250px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            border-bottom-left-radius: 1%;
+            border-bottom-right-radius: 100%;
+            filter: blur(40px);
+        }
+        body>.two{
+            background: linear-gradient(-190deg, #1894DE, #21A2CE,#005F73);
+            width: 500px;
+            height: 250px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1;
+            border-radius: 46% 54% 31% 69% / 0% 77% 23% 100%   ;
+            filter: blur(40px);
+        }
+        body>.three{
+            background: linear-gradient(0deg, #62CE9D, #4095E0);
+            width: 180mm;
+            height: 50mm;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            border-radius: 78% 22% 60% 40% / 96% 90% 10% 4%    ;
+            filter: blur(20px);
+        }
+
+        body>.four{
+            background: linear-gradient(57deg, #B81F1F, #6489E6);
+            width: 70mm;
+            height: 30mm;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+            border-bottom-left-radius: 1%;
+            border-top-left-radius: 70%;
+            filter: blur(20px);
+        }
+        .login-container {
+            width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: #2e2b2b;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .login-container h2 {
+            color: black;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .login-container input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+    background-color: #2e2b2b;
+            border-radius: 5px;
+            color: white;
+        }
+        .login-container button {
+            width: 70%;
+            margin-left: 40px;
+            padding: 10px;
+            background: linear-gradient(90deg,#6A11CB,#2575FC);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-container button:hover {
+            background-color: #0056b3;
+        }
+        .login-container label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2 style="color: white;">Login</h2>
+        <form>
+            <label for="username">Username </label>
+            <input type="text" name="username" placeholder="Username" required>
+            <label for="password">Password </label>
+            <input class="password" type="password" name="password" placeholder="Password" required>
+            <button type="submit" class="error" onclick="errorFinding(event)">Login</button>
+        </form>
+    </div>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
+    <script>
+        function errorFinding(event) {
+            event.preventDefault();
+
+            let pas = document.querySelector(".password");
+            let passwordValue = pas.value;
+            if (passwordValue.includes(' ')) {
+                alert("Password cannot contain spaces");
+                return;
+            }
+            if (passwordValue.length < 8) {
+                alert("Password must be at most 8 characters long");
+                return;
+            }
+            window.location.href = "home.html";
+        }
+    </script>
+</body>
+</html>

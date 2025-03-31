@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calendar.css">
+    <title>Calendar</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-section">
+            <h1><a href="/Home/home.html">Productivity Hub</a></h1>
+            <div class="sub">
+                <h3 class="one"><a href="/Home/To-Do List/todolist.html">To-Do List</a></h3>
+                <h3><a href="/Home/Notes/notes.html">Notes</a></h3>
+                <h3><a href="/Home/Timer/timer.html">Timer</a></h3>
+                <h3><a href="/Home/Calendar/calendar.html">Calendar</a></h3>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Calendar Section -->
+    <div class="calendar-container">
+        <h2>Dynamic Calendar</h2>
+
+        <!-- Date Selection -->
+        <div class="date-selector">
+            <label for="year">Year :</label>
+            <select id="year"></select>
+
+            <label for="month">Month :</label>
+            <select id="month">
+                <option value="0">January</option>
+                <option value="1">February</option>
+                <option value="2">March</option>
+                <option value="3">April</option>
+                <option value="4">May</option>
+                <option value="5">June</option>
+                <option value="6">July</option>
+                <option value="7">August</option>
+                <option value="8">September</option>
+                <option value="9">October</option>
+                <option value="10">November</option>
+                <option value="11">December</option>
+            </select>
+
+            <label for="date">Date :</label>
+            <select id="date"></select>
+        </div>
+
+        <!-- Task Section -->
+        <div class="task-section">
+            <h3>Add Task</h3>
+            <div class="sub-task-section">
+                <textarea id="task-input" rows="3" placeholder="Write your task here..."></textarea>
+                <br>
+                <button id="add-task">Add Task</button>
+            </div>
+        </div>
+
+        <!-- Task Display Section -->
+        <div class="task-list">
+            <h3>Task List</h3>
+            <ul id="task-display"></ul>
+        </div>
+    </div>
+    
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
+
+    <script src="calendar.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+
+*{      
+    font-family: "Inter", sans-serif;  
+}
+body{
+    padding: 20px;
+    background-color: #121212;
+    color: #FFFFFF;
+}
+
+body>.one{
+    background: linear-gradient(90deg, #98558c, #FF00FF);
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-bottom-left-radius: 1%;
+    border-bottom-right-radius: 100%;
+    filter: blur(40px);
+}
+body>.two{
+    background: linear-gradient(-190deg, #1894DE, #21A2CE,#005F73);
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 46% 54% 31% 69% / 0% 77% 23% 100%   ;
+    filter: blur(40px);
+}
+body>.three{
+    background: linear-gradient(0deg, #62CE9D, #4095E0);
+    width: 180mm;
+    height: 50mm;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 78% 22% 60% 40% / 96% 90% 10% 4%    ;
+    filter: blur(20px);
+}
+
+body>.four{
+    background: linear-gradient(57deg, #B81F1F, #6489E6);
+    width: 70mm;
+    height: 30mm;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    border-bottom-left-radius: 1%;
+    border-top-left-radius: 70%;
+    filter: blur(20px);
+}
+a{
+    text-decoration: none;
+}
+
+.nav-section{
+    display: flex; 
+    align-items: center;
+    gap: 10%;
+    position: relative;
+    margin-left: 3%;
+    margin-top: 1%;
+}
+
+.sub{
+    width:50%;
+    display: flex;
+    align-items: center;
+    gap: 20%;
+    position: absolute;
+    right: 30px;
+}
+.nav-section>h1>a{
+    font-size: 45px;
+    font-weight: bold;
+    position: relative;
+    color: #FFFFFF;
+}
+.sub>h3>a
+{
+    font-size:19px;
+    color: #FFFFFF;
+}
+.sub>h3>a:hover{
+    text-decoration: underline;
+
+    text-underline-offset: 15px;
+}
+/*content*/
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content>h1{
+    margin-top: 7%;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+.btn>button{
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    background: linear-gradient(90deg,#4A90E2,#50C9C3);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.btn>.btn-1>a{
+    padding: 10px 20px;
+    color: white;
+}
+.btn>.btn-2>a{
+    
+    color: white;
+}
+.btn>.btn-2{
+    
+    background:linear-gradient(90deg,#6A11CB,#2575FC);
+}

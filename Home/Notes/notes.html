@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="notes.css">
+    <title>Notes</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-section">
+            <h1><a href="/Home/home.html">Productivity Hub</a></h1>
+            <div class="sub">
+                <h3><a href="/Home/To-Do List/todolist.html">To-Do List</a></h3>
+                <h3><a href="/Home/Notes/notes.html">Notes</a></h3>
+                <h3><a href="/Home/Timer/timer.html">Timer</a></h3>
+                <h3><a href="/Home/Calendar/calendar.html">Calendar</a></h3>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Notes Section -->
+    <div class="container">
+        <h2>📝 Notes</h2>
+        <div class="input-container">
+            <textarea id="noteInput" placeholder="Write your note here..."></textarea>
+            <br>
+            <button onclick="addNote()">Save Note</button>
+        </div>
+        <div id="notesList"></div>
+    </div>
+
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
+    
+    <script src="notes.js"></script>
+</body>
+</html>

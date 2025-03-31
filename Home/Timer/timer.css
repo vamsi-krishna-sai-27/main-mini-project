@@ -1,0 +1,142 @@
+
+*{      
+    font-family: "Inter", sans-serif;  
+}
+body{
+    padding: 20px;
+    background-color: #121212;
+    color: #FFFFFF;
+}
+
+body>.one{
+    background: linear-gradient(90deg, #98558c, #FF00FF);
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-bottom-left-radius: 1%;
+    border-bottom-right-radius: 100%;
+    filter: blur(40px);
+}
+body>.two{
+    background: linear-gradient(-190deg, #1894DE, #21A2CE,#005F73);
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 46% 54% 31% 69% / 0% 77% 23% 100%   ;
+    filter: blur(40px);
+}
+body>.three{
+    background: linear-gradient(0deg, #62CE9D, #4095E0);
+    width: 180mm;
+    height: 50mm;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 78% 22% 60% 40% / 96% 90% 10% 4%    ;
+    filter: blur(20px);
+}
+
+body>.four{
+    background: linear-gradient(57deg, #B81F1F, #6489E6);
+    width: 70mm;
+    height: 30mm;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    border-bottom-left-radius: 1%;
+    border-top-left-radius: 70%;
+    filter: blur(20px);
+}
+a{
+    text-decoration: none;
+}
+
+.nav-section{
+    display: flex; 
+    align-items: center;
+    gap: 10%;
+    position: relative;
+    margin-left: 3%;
+    margin-top: 1%;
+}
+
+.sub{
+    width:50%;
+    display: flex;
+    align-items: center;
+    gap: 20%;
+    position: absolute;
+    right: 30px;
+}
+.nav-section>h1>a{
+    font-size: 45px;
+    font-weight: bold;
+    position: relative;
+    color: #FFFFFF;
+}
+.sub>h3>a
+{
+    font-size:19px;
+    color: #FFFFFF;
+}
+.sub>h3>a:hover{
+    text-decoration: underline;
+
+    text-underline-offset: 15px;
+}
+
+/*section*/
+.timer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.timer-container>h2{
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+.timer-container>.timer-display{
+    background-color: #121212;
+    width: 400px;
+    height: 200px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 95px;
+    font-weight: bold;
+    border: 1px solid #585353;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 15px;
+}
+
+.timer-buttons>button{
+    margin-top: 20px;
+    font-size: 25px;
+    margin-left: 10px;
+    border: none;
+    padding: 20px 40px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.timer-buttons>#start-btn{
+    background: linear-gradient(90deg,#34D399,#059669);
+}
+.timer-buttons>#stop-btn{
+    background: linear-gradient(90deg,#FACC15,#EAB308);
+}
+.timer-buttons>#reset-btn{
+    background:linear-gradient(90deg,#F87171,#DC2626);
+}
